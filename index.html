@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lorem Grid</title>
+  <title>Latitude Visualization Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -15,8 +15,12 @@
     <div class="row">
 
       
-      <div class="col-md-12">
-        <h2>Header</h2>
+      <div class="col-md-9">
+        <h2><a href="index.html">Lattitude</a></h2>
+      </div>
+
+      <div class="col-md-3">
+        Plots -- <a href="comp.html">Comparison</a> -- <a href="data.html">Data</a>
       </div>
      
     </div>
@@ -29,81 +33,31 @@
     <div class="row">
 
       
-      <div class="col-md-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in metus hendrerit, feugiat dui nec, laoreet nulla. Etiam a nisi nibh. Maecenas consequat enim enim, eget viverra libero congue a. 
+      <div class="col-md-7">
+       <h2>Summary: Lattitude vs. X</h2>
+        <p>
+        <img src="assets/lat_temp_sm.jpg" align="left" height="200px">
+        <br>
+        The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+        <p>
+        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
       </div>
 
       
-      <div class="col-md-3">
-        Sed id rutrum libero, sagittis commodo justo. Nulla ultricies magna molestie ipsum pulvinar faucibus. Ut a cursus risus. Nulla dignissim turpis vitae tincidunt tempus. Interdum et malesuada fames ac ante ipsum.
+      <div class="col-md-5">
+        <h3>Visualizations</h3>
+        <a href="temp.html"><img src= "assets/lat_temp_sm.jpg" height="100px"></a> 
+        <a href="cloud.html"><img src= "assets/lat_cloud_sm.jpg" height="100px"></a>
+        <br>
+        <a href="hum.html"><img src= "assets/lat_hum_sm.jpg" height="100px"></a> 
+        <a href="wind.html"><img src= "assets/lat_wind_sm.jpg" height="100px"></a>
       </div>
-
-      
-      <div class="col-md-3">
-      	Curabitur posuere consectetur nisl ac volutpat. Nunc at rutrum turpis. Cras nulla tellus, venenatis id dolor eget, finibus sollicitudin justo. Suspendisse in feugiat lectus. Maecenas ornare, magna id luctus ultriciest.
-      </div>
-
-      
-    </div>
-
-  </div>
-
-  <div class="container">
-
-    <!-- Our columns function in rows. -->
-    <div class="row">
-
-      <div class="col-md-2">
-        Pellentesque leo est, luctus quis sodales et, lobortis eu mi. Nullam sit amet egestas risus. Aenean in nibh eget justo tincidunt finibus. Mauris vulputate enim non malesuada gravida. Morbi ac tempor neque, nec gravida arcu. Sed tincidunt neque sem, eu hendrerit urna pretium et. Ut dignissim turpis ut nunc posuere auctor.
-      </div>
-
-      
-      <div class="col-md-2">
-        In hac habitasse platea dictumst. Donec consequat id justo sed vulputate. Donec eu augue lorem. Quisque a commodo nunc, at commodo mauris. Ut vel erat interdum ligula vehicula iaculis in et leo.
-      </div>
-
-      
-      <div class="col-md-2">
-      	Proin accumsan dictum lacus, at viverra odio varius nec. Nullam vehicula felis quis eros sollicitudin lacinia. In ac elit viverra nibh bibendum gravida a nec nibh. Praesent maximus sagittis mauris non iaculis. Etiam id ante quis lacus vestibulum hendrerit. Phasellus sit amet auctor urna. Ut euismod lectus neque, vel pulvinar diam ornare quis. 
-      </div>
-
-      <div class="col-md-2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in metus hendrerit, feugiat dui nec, laoreet nulla. Etiam a nisi nibh. Maecenas consequat enim enim, eget viverra libero congue a. Integer vestibulum eu nulla et sollicitudin. Pellentesque ac efficitur sem. Suspendisse non euismod lacus, eget vestibulum quam. Maecenas in justo lectus.
-      </div>
-
-      
-      <div class="col-md-2">
-        Sed id rutrum libero, sagittis commodo justo. Nulla ultricies magna molestie ipsum pulvinar faucibus. Ut a cursus risus. Nulla dignissim turpis vitae tincidunt tempus. Interdum et malesuada fames ac ante ipsum.
-      </div>
-
-      
-      <div class="col-md-2">
-      	Curabitur posuere consectetur nisl ac volutpat. Nunc at rutrum turpis. Cras nulla tellus, venenatis id dolor eget, finibus sollicitudin justo. Suspendisse in feugiat lectus. Maecenas ornare, magna id luctus ultriciest.
-      </div>
-
       
     </div>
 
   </div>
 
-  <div class="container">
-
-    <!-- Our columns function in rows. -->
-    <div class="row">
-
-      
-      <div class="col-md-6">
-        sagittis commodo justo. Nulla ultricies magna molestie ipsum pulvinar faucibus. Ut a cursus risus. Nulla dignissim turpis vitae tincidunt tempus. Interdum et malesuada fames ac ante ipsum.
-      </div>
-
-      <div class="col-md-6">
-        icitudin lacinia. In ac elit viverra nibh bibendum gravida a nec nibh. Praesent maximus sagittis mauris non iaculis. Etiam id ante quis lacus vestibulum hendrerit. Phasellus sit amet auctor urna. Ut euismod lectus neq
-      </div>
-     
-    </div>
-
-  </div>
-
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
