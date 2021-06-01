@@ -5,13 +5,13 @@
   <title>Latitude Visualization Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body bgcolor="#EDEDED">
+<!--<nav class="nav navbar-expand-md navbar-dark" style="background-color: #4AAAA5">-->
+  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark" style="background-color: #4AAAA5">
 
-  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg light">
-  <!--style="background-color: #e3f2fd;">-->
-<button class="btn btn-info navbar-btn">
+<!--<button class="btn btn-info navbar-btn">-->
         <a class="navbar-brand" href="index.html">Lattitude</a>
-</button>
+<!--</button>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,14 +43,22 @@
         </div>
     </nav>
 
+ <div class="col-md-12" style="background-color: #EDEDED">
+
+ <div class="container" style="background-color: #EDEDED">
+  <div class="row">
+      <div class="col-md-12">
+        <p>
+      </div>
+  </div>
+ </div>
 
   <div class="container">
-
+  
     <div class="row">
-
       
-      <div class="col-md-7">
-       <h2>Summary: Lattitude vs. X</h2>
+      <div class="col-md-8" style="background-color: #ffffff">
+       <h2 style="color: #4AAAA5">Summary: Lattitude vs. X</h2>
         <p>
         <img src="assets/lat_temp_sm.jpg" align="left" height="200px">
         <br>
@@ -58,22 +66,35 @@
         <p>
         After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  Factors we looked at included: temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
       </div>
-
+      <div class="col-md-1">
+      </div>
       
-      <div class="col-md-5">
-        <h3>Visualizations</h3>
-        <a href="temp.html"><img src= "assets/lat_temp_sm.jpg" height="100px"></a> 
-        <a href="cloud.html"><img src= "assets/lat_cloud_sm.jpg" height="100px"></a>
-        <br>
-        <a href="hum.html"><img src= "assets/lat_hum_sm.jpg" height="100px"></a> 
-        <a href="wind.html"><img src= "assets/lat_wind_sm.jpg" height="100px"></a>
+      <div class="col-md-3" style="background-color: #ffffff">
+        <center>
+        <h3 style="color: #4AAAA5">Visualizations</h3>
+        <a href="temp.html"><img src= "assets/lat_temp_sm.jpg" width="120px" alt="Temperature"></a> 
+        <a href="cloud.html"><img src= "assets/lat_cloud_sm.jpg" width="120px" alt="Cloudiness"></a> 
+        <a href="hum.html"><img src= "assets/lat_hum_sm.jpg" width="120px" alt="Humidity"></a> 
+        <a href="wind.html"><img src= "assets/lat_wind_sm.jpg" width="120px" alt="Wind Speed"></a>
+        </center>
       </div>
       
     </div>
+  
+  </div>
+
+  <div class="container" style="background-color: #EDEDED">
+   <div class="row">
+      <div class="col-md-12">
+        <br><br><br><br><br><br><br><br>
+      </div>
+   </div>
+  </div>
 
   </div>
 
-  
+
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
