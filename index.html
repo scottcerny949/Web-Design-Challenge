@@ -7,29 +7,45 @@
 </head>
 <body>
 
-<!-- Our rows function in containers (grid created). -->
+  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg light">
+  <!--style="background-color: #e3f2fd;">-->
+<button class="btn btn-info navbar-btn">
+        <a class="navbar-brand" href="index.html">Lattitude</a>
+</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<div class="container">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-    <!-- Our columns function in rows. -->
-    <div class="row">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="temp.html">Temperature</a>
+                        <a class="dropdown-item" href="hum.html">Humidity</a>
+                        <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                    </div>
+                </li>
 
-      
-      <div class="col-md-9">
-        <h2><a href="index.html">Lattitude</a></h2>
-      </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="comp.html">Comparison</a>
+                </li>
 
-      <div class="col-md-3">
-        Plots -- <a href="comp.html">Comparison</a> -- <a href="data.html">Data</a>
-      </div>
-     
-    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  </div>
 
   <div class="container">
 
-    <!-- Our columns function in rows. -->
     <div class="row">
 
       
