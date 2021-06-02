@@ -2,107 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lorem Grid</title>
+  <title>Latitude Visualization Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body bgcolor="#EDEDED">
+<!--<nav class="nav navbar-expand-md navbar-dark" style="background-color: #4AAAA5">-->
+  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark" style="background-color: #4AAAA5">
 
-<!-- Our rows function in containers (grid created). -->
+<!--<button class="btn btn-info navbar-btn">-->
+        <a class="navbar-brand" href="index.html">Lattitude</a>
+<!--</button>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<div class="container">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-    <!-- Our columns function in rows. -->
-    <div class="row">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="temp.html">Temperature</a>
+                        <a class="dropdown-item" href="hum.html">Humidity</a>
+                        <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                    </div>
+                </li>
 
-      
+                <li class="nav-item">
+                    <a class="nav-link" href="comp.html">Comparison</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+ <div class="col-md-12" style="background-color: #EDEDED">
+
+ <div class="container" style="background-color: #EDEDED">
+  <div class="row">
       <div class="col-md-12">
-        <h2>Header</h2>
+        <p>
       </div>
-     
-    </div>
-
   </div>
+ </div>
 
   <div class="container">
-
-    <!-- Our columns function in rows. -->
+  
     <div class="row">
-
       
-      <div class="col-md-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in metus hendrerit, feugiat dui nec, laoreet nulla. Etiam a nisi nibh. Maecenas consequat enim enim, eget viverra libero congue a. 
+      <div class="col-md-8" style="background-color: #ffffff">
+       <h2 style="color: #4AAAA5">Cloudiness</h2>
+        <p>
+        <img src="assets/lat_cloud_sm.jpg" align="left" height="450px">
+        <p>
+          <h3>Latitude vs. Cloudiness:</h3>
+          <ul>
+            <li>This plot compares cloudiness with latitude.
+            <li>The plot shows that there does not appear to be a correlation between cloudiness and latitude. The cloudiness percentage is pretty consistent across latitude.
+          </ul>
       </div>
-
+      <div class="col-md-1">
+      </div>
       
-      <div class="col-md-3">
-        Sed id rutrum libero, sagittis commodo justo. Nulla ultricies magna molestie ipsum pulvinar faucibus. Ut a cursus risus. Nulla dignissim turpis vitae tincidunt tempus. Interdum et malesuada fames ac ante ipsum.
+      <div class="col-md-3" style="background-color: #ffffff">
+        <center>
+        <h3 style="color: #4AAAA5">Visualizations</h3>
+        <a href="temp.html"><img src= "assets/lat_temp_sm.jpg" width="120px" id ="pichover" alt="Temperature"></a> 
+        <a href="cloud.html"><img src= "assets/lat_cloud_sm.jpg" width="120px" id ="pichover" alt="Cloudiness"></a> 
+        <a href="hum.html"><img src= "assets/lat_hum_sm.jpg" width="120px" id ="pichover" alt="Humidity"></a> 
+        <a href="wind.html"><img src= "assets/lat_wind_sm.jpg" width="120px" id ="pichover" alt="Wind Speed"></a>
+        </center>
       </div>
-
-      
-      <div class="col-md-3">
-      	Curabitur posuere consectetur nisl ac volutpat. Nunc at rutrum turpis. Cras nulla tellus, venenatis id dolor eget, finibus sollicitudin justo. Suspendisse in feugiat lectus. Maecenas ornare, magna id luctus ultriciest.
-      </div>
-
       
     </div>
+  
+  </div>
+
+  <div class="container" style="background-color: #EDEDED">
+   <div class="row">
+      <div class="col-md-12">
+        <br><br><br><br><br><br><br><br>
+      </div>
+   </div>
+  </div>
 
   </div>
 
-  <div class="container">
 
-    <!-- Our columns function in rows. -->
-    <div class="row">
-
-      <div class="col-md-2">
-        Pellentesque leo est, luctus quis sodales et, lobortis eu mi. Nullam sit amet egestas risus. Aenean in nibh eget justo tincidunt finibus. Mauris vulputate enim non malesuada gravida. Morbi ac tempor neque, nec gravida arcu. Sed tincidunt neque sem, eu hendrerit urna pretium et. Ut dignissim turpis ut nunc posuere auctor.
-      </div>
-
-      
-      <div class="col-md-2">
-        In hac habitasse platea dictumst. Donec consequat id justo sed vulputate. Donec eu augue lorem. Quisque a commodo nunc, at commodo mauris. Ut vel erat interdum ligula vehicula iaculis in et leo.
-      </div>
-
-      
-      <div class="col-md-2">
-      	Proin accumsan dictum lacus, at viverra odio varius nec. Nullam vehicula felis quis eros sollicitudin lacinia. In ac elit viverra nibh bibendum gravida a nec nibh. Praesent maximus sagittis mauris non iaculis. Etiam id ante quis lacus vestibulum hendrerit. Phasellus sit amet auctor urna. Ut euismod lectus neque, vel pulvinar diam ornare quis. 
-      </div>
-
-      <div class="col-md-2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in metus hendrerit, feugiat dui nec, laoreet nulla. Etiam a nisi nibh. Maecenas consequat enim enim, eget viverra libero congue a. Integer vestibulum eu nulla et sollicitudin. Pellentesque ac efficitur sem. Suspendisse non euismod lacus, eget vestibulum quam. Maecenas in justo lectus.
-      </div>
-
-      
-      <div class="col-md-2">
-        Sed id rutrum libero, sagittis commodo justo. Nulla ultricies magna molestie ipsum pulvinar faucibus. Ut a cursus risus. Nulla dignissim turpis vitae tincidunt tempus. Interdum et malesuada fames ac ante ipsum.
-      </div>
-
-      
-      <div class="col-md-2">
-      	Curabitur posuere consectetur nisl ac volutpat. Nunc at rutrum turpis. Cras nulla tellus, venenatis id dolor eget, finibus sollicitudin justo. Suspendisse in feugiat lectus. Maecenas ornare, magna id luctus ultriciest.
-      </div>
-
-      
-    </div>
-
-  </div>
-
-  <div class="container">
-
-    <!-- Our columns function in rows. -->
-    <div class="row">
-
-      
-      <div class="col-md-6">
-        sagittis commodo justo. Nulla ultricies magna molestie ipsum pulvinar faucibus. Ut a cursus risus. Nulla dignissim turpis vitae tincidunt tempus. Interdum et malesuada fames ac ante ipsum.
-      </div>
-
-      <div class="col-md-6">
-        icitudin lacinia. In ac elit viverra nibh bibendum gravida a nec nibh. Praesent maximus sagittis mauris non iaculis. Etiam id ante quis lacus vestibulum hendrerit. Phasellus sit amet auctor urna. Ut euismod lectus neq
-      </div>
-     
-    </div>
-
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
